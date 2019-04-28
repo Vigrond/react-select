@@ -1389,6 +1389,7 @@ export default class Select extends Component<Props, State> {
       inputId,
       inputValue,
       tabIndex,
+      ...props,
     } = this.props;
     const { Input } = this.components;
     const { inputIsHidden } = this.state;
@@ -1442,6 +1443,7 @@ export default class Select extends Component<Props, State> {
         type="text"
         value={inputValue}
         {...ariaAttributes}
+        {...props}
       />
     );
   }
