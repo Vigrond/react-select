@@ -1391,6 +1391,7 @@ export default class Select extends Component<Props, State> {
       tabIndex,
       ...props,
     } = this.props;
+    console.log(this.props);
     const { Input } = this.components;
     const { inputIsHidden } = this.state;
 
